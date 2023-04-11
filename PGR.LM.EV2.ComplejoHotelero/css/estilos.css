@@ -2,22 +2,24 @@
 
 * {
     box-sizing: border-box;
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
-.droid, body {
+.droid,
+body {
     font-family: 'PT Serif', serif;
 }
 
-.oswald, header{
+.oswald,
+header {
     font-family: 'Oswald', sans-serif;
 }
 
 .playfair {
+    text-transform: capitalize;
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    text-transform: capitalize;
 }
 
 .roboto {
@@ -36,10 +38,10 @@ header {
 
 header>div {
     display: flex;
-    justify-content: space-between;
     align-items: end;
+    justify-content: space-between;
+    border-bottom: 2px solid #e5e5e5;
     padding: 10px 0px;
-    border-bottom: 2px solid #e5e5e5;  
 }
 
 header div {
@@ -76,8 +78,8 @@ a {
 
 nav ul {
     display: flex;
-    justify-content: space-evenly;
     padding: 15px;
+    justify-content: space-evenly;
     text-transform: uppercase;
 }
 
@@ -90,7 +92,8 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover, a.current {
+nav a:hover,
+a.current {
     color: black;
 }
 
@@ -102,7 +105,7 @@ nav a:hover, a.current {
 footer {
     background-color: #dedede;
     padding: 30px 100px 10px;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 #footer1 {
@@ -117,9 +120,9 @@ footer {
 }
 
 #footer3 {
+    align-items: center;
     float: right;
     display: flex;
-    align-items: center;
     margin-bottom: 60px;
 }
 
@@ -135,7 +138,7 @@ footer {
 }
 
 #footer5 {
-    float: right ;
+    float: right;
 }
 
 p {
@@ -143,4 +146,5 @@ p {
     border-top: 2px solid #c8c8c8;
     line-height: 3rem;
     text-align: center;
+    font-size: 0.8rem;
 }
