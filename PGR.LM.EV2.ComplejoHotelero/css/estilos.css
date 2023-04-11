@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=PT+Serif&family=Playfair+Display:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.droid, body {
+    font-family: 'PT Serif', serif;
+}
+
+.oswald, header{
+    font-family: 'Oswald', sans-serif;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: #ffffff;
+    margin: 0 100px;
+}
+
+header>div {
+     display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px 0px;
+    border-bottom: 2px solid #e5e5e5;  
+}
+
+th {
+    padding-bottom: 5px;
+}
+td:nth-child(2) {
+    padding-right: 15px;
+}
+
+td a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.icon {
+    height: 30px;
+    width: 18px;
+    overflow: hidden;
+    float: left;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+nav a:hover, a.current {
+    color: black;
+}
+
+.separador {
+    height: 20px;
+    background-image: linear-gradient(to bottom, #dedede, white);
+}
+
+
+
+
