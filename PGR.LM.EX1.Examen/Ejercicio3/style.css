@@ -1,0 +1,39 @@
+
+h1, caption, th {
+    text-align: center;
+}
+
+#uno {
+    border: 1px solid blue;
+}
+
+#uno td {
+    border: 1px solid greenblue;
+}
+
+#dos {
+    background-color: gray;
+}
+
+#tres {
+    border: 3px solid blue;
+}
+
+#cuatro {
+    border: 3px solid green;
+}
+
+#cinco {
+    border: 3px solid orange;
+}
+
+
+
+td {
+    border: 1px solid lightgreen;
+}
+
+tfoot {
+    background-color: orange;
+
+}

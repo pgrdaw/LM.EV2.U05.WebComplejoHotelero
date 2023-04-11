@@ -1,0 +1,33 @@
+#tooltip {
+    display: none;
+    background-color: blueviolet;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    left: 150px;
+    top: 40px;
+}
+
+#tooltip::before {
+    float: right;
+    display: none;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: blueviolet;
+    position: relative;
+    top: -30px;
+    right: 0px;
+    rotate: 45deg;
+}
+
+#tooltip:target {
+    display: block;
+}
+
+#tooltip:target::before {
+    display: block;
+}

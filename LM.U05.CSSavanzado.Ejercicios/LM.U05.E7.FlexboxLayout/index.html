@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Flex-lab</title>
+
+    <style>
+        html {
+            font-size: 8px;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
+        .blanco {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        h1,
+        h2,
+        h3 {
+            width: 100%;
+        }
+
+        h3 {
+            letter-spacing: -1px;
+            font-size: 90%;
+        }
+
+        .azul {
+            background-image: linear-gradient(rgb(0, 217, 255), rgb(243, 220, 224), rgb(0, 217, 255));
+            border: 1px solid black;
+            margin: 5px;
+            border-radius: 5px;
+            width: 45%;
+            justify-content: space-around;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .amarillo {
+            background-color: yellow;
+            border: 1px solid gray;
+            margin: 5px;
+            border-radius: 5px;
+            width: 45%;
+            height: 100px;
+            justify-content: space-around;
+        }
+
+        .naranja {
+            background-color: #ffd100;
+            width: 80%;
+            height: 50px;
+            margin: auto;
+            display: flex;
+        }
+
+        .verde {
+            background-color: greenyellow;
+            border: 1px dashed black;
+            padding: 3px;
+        }
+
+        #A1 {
+            flex-direction: row;
+        }
+
+        #A2 {
+            flex-direction: row-reverse;
+        }
+
+        #A3 {
+            flex-direction: column;
+        }
+
+        #A4 {
+            flex-direction: column-reverse;
+        }
+
+        #B1 {
+            justify-content: center;
+        }
+
+        #B2 {
+            justify-content: space-around;
+        }
+
+        #B3 {
+            justify-content: space-between;
+        }
+
+        #B4 {
+            justify-content: space-evenly;
+        }
+
+        #C1 {
+            align-items: start;
+        }
+
+        #C2 {
+            align-items: end;
+        }
+
+        #C3 {
+            align-items: center;
+        }
+
+        #C4 {
+            align-items: stretch;
+        }
+
+        #D .verde {
+            width: 30%;
+        }
+
+        #D .naranja {
+            flex-wrap: wrap;
+        }
+
+        #D1 {
+            align-content: start;
+        }
+
+        #D2 {
+            align-content: end;
+        }
+
+        #D3 {
+            align-content: center;
+        }
+
+        #D4 {
+            align-content: space-between;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My own Flex-Lab</h1>
+
+    <div class="blanco">
+        <div class="azul">
+            <h2>Flex direction / wrap</h2>
+            <div class="amarillo">
+                <h3>flex-direction: row;</h3>
+                <div class="naranja" id="A1">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                </div>
+            </div>
+            <div class="amarillo">
+                <h3>flex-direction: row-reverse;</h3>
+                <div class="naranja" id="A2">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                </div>
+            </div>
+            <div class="amarillo">
+                <h3>flex-direction: column;</h3>
+                <div class="naranja" id="A3">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                </div>
+            </div>
+            <div class="amarillo">
+                <h3>flex-direction: column-reverse;</h3>
+                <div class="naranja" id="A4">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                </div>
+            </div>
+        </div>
+        <div class="azul">
+            <h2>Justify-content</h2>
+            <div class="amarillo">
+                <h3>justify-content: center;</h3>
+                <div class="naranja" id="B1">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                </div>
+            </div>
+            <div class="amarillo">
+                <h3>justify-content: space-around;</h3>
+                <div class="naranja" id="B2">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                </div>
+            </div>
+            <div class="amarillo">
+                <h3>justify-content: space-between;</h3>
+                <div class="naranja" id="B3">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                </div>
+            </div>
+            <div class="amarillo">
+                <h3>justify-content: space-evenly;</h3>
+                <div class="naranja" id="B4">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                </div>
+            </div>
+        </div>
+        <div class="azul">
+            <h2>Align-items</h2>
+            <div class="amarillo">
+                <h3>align-items: start;</h3>
+                <div class="naranja" id="C1">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                </div>
+            </div>
+            <div class="amarillo">
+                <h3>align-items: end;</h3>
+                <div class="naranja" id="C2">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                </div>
+            </div>
+            <div class="amarillo">
+                <h3>align-items: center;</h3>
+                <div class="naranja" id="C3">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                </div>
+            </div>
+            <div class="amarillo">
+                <h3>align-items: baseline;</h3>
+                <div class="naranja" id="C4">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                </div>
+            </div>
+        </div>
+        <div class="azul" id="D">
+            <h2>Align-content</h2>
+            <div class="amarillo">
+                <h3>align-content: start;</h3>
+                <div class="naranja" id="D1">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                    <div class="verde">4</div>
+                    <div class="verde">5</div>
+                    <div class="verde">6</div>
+                </div>
+            </div>
+            <div class="amarillo">
+                <h3>align-content: end;</h3>
+                <div class="naranja" id="D2">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                    <div class="verde">4</div>
+                    <div class="verde">5</div>
+                    <div class="verde">6</div>
+                </div>
+            </div>
+            <div class="amarillo">
+                <h3>align-content:center;</h3>
+                <div class="naranja" id="D3">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                    <div class="verde">4</div>
+                    <div class="verde">5</div>
+                    <div class="verde">6</div>
+                </div>
+            </div>
+            <div class="amarillo">
+                <h3>align-content:space-between;</h3>
+                <div class="naranja" id="D4">
+                    <div class="verde">1</div>
+                    <div class="verde">2</div>
+                    <div class="verde">3</div>
+                    <div class="verde">4</div>
+                    <div class="verde">5</div>
+                    <div class="verde">6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

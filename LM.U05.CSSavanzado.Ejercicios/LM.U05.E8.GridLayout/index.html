@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - Grid Layout</title>
+
+    <style>
+
+        html {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 150px 100px 1fr 75px;
+            grid-template-areas: 
+            'h h'
+            'n n'
+            'm a'
+            'f f';
+            grid-gap: 5px;
+            height: 100vh;
+        }
+
+        header {
+            grid-area: h;
+            background-color: #6495ed;
+        }
+
+        nav {
+            grid-area: n;
+            background-color: #dcdcdc;
+        }
+
+        main {
+            grid-area: m;
+            background-color: #dc143c;
+        }
+
+        aside {
+            grid-area: a;
+            background-color: #fff8dc;
+        }
+
+        footer {
+            grid-area: f;
+            background-color: #000000;
+        }
+
+        header, nav, main, aside, footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header, main, footer {
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>&lt;header&gt;</header>
+    <nav>&lt;nav&gt;</nav>
+    <main>&lt;main&gt;</main>
+    <aside>&lt;aside&gt;</aside>
+    <footer>&lt;footer&gt;</footer>
+
+</body>
+</html>

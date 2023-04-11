@@ -1,0 +1,58 @@
+@import url('https://allfont.es/allfont.css?fonts=officinasansdosctt-bold');
+
+*{
+    font-family: 'OfficinaSansDOSCTT', arial;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    text-align: center;
+}
+
+fieldset {
+    border: solid 1px lightgrey;
+    border-radius: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    border: 2px outset lightgray;
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    background-image: linear-gradient(to top, orange, yellow);
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+hr {
+    color: lightgray;
+}
+
+a {
+    color: rgb(13, 164, 184);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.azul {
+    color: rgb(13, 164, 184);
+}
+
+.rojo {
+    color : red
+}
+
+.verde {
+    color: green
+}

@@ -1,0 +1,15 @@
+#mensajeOculto {
+    display: none;
+}
+
+#continua {
+    display: none;
+}
+
+#mensajeOculto:target {
+    display: block;
+}
+
+#continua:target {
+    display: block;
+}

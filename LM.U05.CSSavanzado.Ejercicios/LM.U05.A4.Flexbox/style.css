@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+
+div {
+    font-size: 0.75em;
+}
+
+.box {
+    background-color: rgba(128, 0, 128, 0.5);
+    border: 1px solid purple;
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:center;
+}
+
+.item {
+    background-color: rgba(250, 128, 114, 0.5);
+    border: 1px solid rgb(250, 128, 114);
+    height: 50px;
+    flex-grow: 1;
+}
+
+.item:nth-child(3) {
+    flex-grow: 5;
+    order: -2;
+}
+
+.item:nth-child(8) {
+    width: 100px;
+    order: -1;
+}

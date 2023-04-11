@@ -1,0 +1,103 @@
+header {
+    background-color: #778899;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #008000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 0.8rem;
+}
+
+nav a {
+    color: #ffffff;
+}
+
+main {
+    margin: 0px;
+}
+
+aside {
+    float: left;
+    width: 25%;
+    height: 500px ;
+    padding-right: 20px;
+    border-right: 2px solid #87cefa;
+}
+
+aside p {
+    margin: 20px 0px;
+}
+
+input {
+    width: 95%;
+}
+
+
+article p {
+    padding: 20px;
+
+}
+
+/* a) Uso del selector descendiente Usa el selector descendiente para pintar de verde todos los títulos h2 de los articles. */
+article h2 {
+    margin: 0px;
+    padding: 20px;
+    color: #14c513;
+}
+
+/* b) Uso del selector hijo directo Usa este selector para que le ponga un sombreado a los span hijos directos de los párrafos. */
+article p>span {
+    background-color: #add8e6;
+}
+
+/* c) Uso del selector primer contiguo Usa este selector para poner un border radius y un fondo al primer div después de un párrafo dentro del aside */
+aside p+div {
+    background-color: #87cefa;
+    border-radius: 10px;
+}
+
+/* d) Uso del selector de atributos Usa este selector para que el input de tipo email cuando sea válido se muestre en verde y cuando sea inválido en rojo. */
+input[type="email"]:valid {
+    border: 3px solid lightgreen;
+}
+
+input[type="email"]:invalid {
+    border: 3px solid red;
+}
+
+/* e) Uso de selectores de estado Usa este selector junto con el atributo hover para poner un color de fondo en el menú d navegación cuando se pasa por encima. */
+nav a:hover {
+    background-color: greenyellow;
+}
+
+/* f) Uso del selector raiz Usa el selector raíz para poner color de fondo negro a la página y color de letra blanco */
+:root {
+    background-color: black;
+    color: white;
+}
+
+article p::first-line {
+    color: #dd4b8f;
+}
+
+article p::first-letter {
+    color: green;
+    font-size: 2rem;
+}

@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor {
+    height: 300px;
+    width: 75%;
+    border: 3px dotted rgb(247, 68, 23);
+    background-color: rgba(255, 96, 96, 0.39);
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+
+    display: inline-block;
+}
+
+.sta {
+    position: static;
+}
+
+.abs {
+    position: absolute;
+}
+
+.rel {
+    position: relative;
+}
+
+.fix{
+    position: fixed;
+}
+
+.sti {
+    position: sticky;
+}
+
+#uno {
+    background-color: rgb(80, 148, 207);
+}
+
+#dos {
+    background-color: rgb(63, 204, 50);
+    bottom: 50px;
+    right: 50px;
+    z-index: 10;
+    position: ;
+}
+
+#tres {
+    background-color: rgb(185, 102, 54);
+    top: -50px;
+    left: -50px;
+    z-index: 20;
+}
+
+#cuatro {
+    background-color: rgb(81, 46, 122);
+}
