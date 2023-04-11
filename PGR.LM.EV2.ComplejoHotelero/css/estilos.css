@@ -31,7 +31,7 @@
 
 header {
     background-color: #ffffff;
-    margin: 0px 100px;
+    padding: 0px 100px;
 }
 
 header>div {
@@ -43,12 +43,21 @@ header>div {
 }
 
 header div {
-    padding: 10px;
+    padding: 10px 0px;
 }
 
-.icon {
+.iconic {
     background-repeat: no-repeat;
-    padding: 0px 22px;
+    padding-left: 22px;
+}
+
+.iconic:nth-child(odd) {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .icoshop {
@@ -63,11 +72,6 @@ header div {
 .icoloc {
     background-image: url("../media/img/iconos/ico-loc.png");
     background-position: left;
-}
-
-.icon a {
-    text-decoration: none;
-    color: black;
 }
 
 nav ul {
@@ -95,6 +99,48 @@ nav a:hover, a.current {
     background-image: linear-gradient(to bottom, #dedede, white);
 }
 
+footer {
+    background-color: #dedede;
+    padding: 30px 100px 10px;
+    overflow: hidden;   
+}
 
+#footer1 {
+    float: left;
+    text-align: right;
+}
 
+#footer2 {
+    font-size: 0.8rem;
+    float: left;
+    padding: 15px 5vw 0px;
+}
 
+#footer3 {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#footer3>img {
+    padding: 0px 10px;
+}
+
+#footer4 {
+    clear: both;
+    float: left;
+    padding: 10px 60px;
+
+}
+
+#footer5 {
+    float: right ;
+}
+
+p {
+    clear: both;
+    border-top: 2px solid #c8c8c8;
+    line-height: 3rem;
+    text-align: center;
+}
