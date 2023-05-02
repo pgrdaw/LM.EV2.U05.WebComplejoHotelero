@@ -637,15 +637,23 @@ section {
 
 /* LOCALIZACION */
 
-#loc {
-    text-align: center;
-}
-
 #mapa,
 #horario {
-    display: inline-block;
-    margin: 25px;
-    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#mapa {
+    float: left;
+    margin-left: 150px;
+}
+
+#horario {
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 250px;
+    margin-left: 550px;
+    padding: 20px;
 }
 
 iframe {
@@ -656,11 +664,6 @@ iframe {
 }
 
 
-#horario {
-    border: 2px solid #333;
-    border-radius: 10px;
-    width: 300px;
-}
 
 #horario h1,
 #horario h2,
@@ -695,4 +698,5 @@ iframe {
 #horario sub {
     font-style: italic;
     color: #333;
+    text-align: left;
 }
