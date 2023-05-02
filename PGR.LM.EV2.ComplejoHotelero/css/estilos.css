@@ -7,7 +7,8 @@
     font-size: 16px;
 }
 
-h1, h3 {
+h1,
+h3 {
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
@@ -613,7 +614,7 @@ section {
 
 #informacion li {
     padding: 8px;
-    list-style:none;
+    list-style: none;
 }
 
 #firma {
@@ -636,10 +637,62 @@ section {
 
 /* LOCALIZACION */
 
+#loc {
+    text-align: center;
+}
+
+#mapa,
+#horario {
+    display: inline-block;
+    margin: 25px;
+    padding: 15px;
+}
+
 iframe {
-    margin: 50px;
     border: 2px solid #333;
     border-radius: 5% 50%;
     width: 300px;
     height: 300px;
+}
+
+
+#horario {
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 300px;
+}
+
+#horario h1,
+#horario h2,
+#horario p,
+#horario li {
+    font-family: 'Oswald', sans-serif;
+}
+
+#horario h1 {
+    font-size: 1rem;
+    font-variant: normal;
+    text-transform: none;
+    font-weight: normal;
+}
+
+#horario h2 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+#horario li {
+    font-size: 0.7rem;
+    list-style: none;
+    text-align: left;
+}
+
+#horario p {
+    font-size: 0.8rem;
+}
+
+#horario sub {
+    font-style: italic;
+    color: #333;
 }
