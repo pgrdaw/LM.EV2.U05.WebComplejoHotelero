@@ -66,33 +66,41 @@
         <div id="contenedor1">
 
             <section id="formulario">
-                <form action="">
+                <form action="/contacto.php" method="POST">
                     <div id="nom">
                         <label for="nombre">Nombre</label><br>
-                        <input type="text" name="nombre" id="nombre">
+                        <input type="text" name="nombre" id="nombre" required placeholder="Pedro García Pérez"
+                            pattern="[A-Za-záéíóúüñÁÉÍÓÚÑ\s]{3,254}"
+                            title="Introduzca un nombre válido de entre 3 y 254 caracteres alfanuméricos">
                     </div>
                     <div id="ciu">
                         <label for="ciudad">Ciudad</label><br>
-                        <input type="text" name="ciudad" id="ciudad">
+                        <input type="text" name="ciudad" id="ciudad" placeholder="Sevilla"
+                            pattern="[A-Za-záéíóúüñÁÉÍÓÚÑ\s]{3,254}"
+                            title="Introduzca un nombre de ciudad válido de entre 3 y 254 caracteres alfanuméricos">
                     </div>
                     <div id="ema">
                         <label for="email">Email</label><br>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required placeholder="pedro.garcia@sevilla.es"
+                            pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*"
+                            title="Introduzca un email válido">
                     </div>
                     <div id="tel">
-                        <label for="telefono">Telefono</label><br>
-                        <input type="tel" name="telefono" id="telefono">
+                        <label for="telefono">Teléfono</label><br>
+                        <input type="tel" name="telefono" id="telefono" placeholder="+34 655 997 991"
+                            pattern="\+?[0-9\s]{6,20}"
+                            title="Introduzca un teléfono válido de entre 6 y 20 números o espacios">
                     </div>
                     <div id="asu">
                         <label for="asunto">Asunto</label><br>
-                        <input type="text" name="asunto" id="asunto">
+                        <input type="text" name="asunto" id="asunto" required placeholder="Asunto">
                     </div>
                     <div id="con">
                         <label for="consulta">Consulta</label><br>
-                        <textarea name="consulta" id="consulta"></textarea>
+                        <textarea name="consulta" id="consulta" placeholder="Quería información sobre..."></textarea>
                     </div>
                     <div id="ace">
-                        <input type="checkbox" name="acepto" id="acepto">
+                        <input type="checkbox" name="acepto" id="acepto" required>
                         <label for="acepto">He leído y acepto la política de privacidad y los términos legales.</label>
                     </div>
                     <div id="env">
@@ -167,7 +175,9 @@
                         <a href="https://www.youtube.com"><img src="media/img/ico-youtube.png" alt="logo youtube"
                                 target="_blank" height="30px"></a>
                     </li>
-                    <li><h3>Información de interés:</h3></li>
+                    <li>
+                        <h3>Información de interés:</h3>
+                    </li>
                     <li>¿Cómo llegar?</li>
                     <li>Ver actividades</li>
                     <li>Preguntas frecuentes</li>
