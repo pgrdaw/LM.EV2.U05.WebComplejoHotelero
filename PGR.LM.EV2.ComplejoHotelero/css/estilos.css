@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.root {
+:root {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-size: 16px;
 }
+
+@media screen and (max-width: 425px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
 
 .droid,
 body {
@@ -65,17 +77,29 @@ header {
         border-bottom: 2px solid #e5e5e5;
         padding: 10px 0px;
     }
+
+    .relleno {
+        height: 175px;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .ocultar1 {
         display: none;
     }
+
+    .relleno {
+        height: 261px;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .ocultar2 {
         display: none;
+    }
+    
+    .relleno {
+        height: 175px;
     }
 }
 
@@ -339,11 +363,13 @@ section {
     font-size: 15px;
 }
 
-#galeria {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
+@media screen and (min-width: 900px) {
+    #galeria {
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
 }
 
 #galeria div {
@@ -558,23 +584,51 @@ section {
     text-decoration: underline;
 }
 
-.relleno {
-    height: 175px;
-}
-
 /* CONTACTO */
 
 #contenedor1 {
-    padding: 64px 32px;
+    padding: 32px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-        'form info'
-        'prot info'
-        'firm firm';
     row-gap: 64px;
     text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    #contenedor1 {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            'form info'
+            'prot info'
+            'firm firm';
+    }
+
+    #formulario form {
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'nom nom ciu ciu'
+            'ema ema tel tel'
+            'asu asu asu asu'
+            'con con con con'
+            'ace ace ace env';
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contenedor1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            'form' 'prot' 'info' 'firm';
+    }
+    #formulario form {
+        grid-template-rows: repeat(9, auto);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'nom''ciu''ema''tel''asu'
+            'con''ace''env';
+    }
 }
 
 #formulario {
@@ -587,14 +641,6 @@ section {
 #formulario form {
     padding: 0px 40px;
     display: grid;
-    grid-template-rows: repeat(5, auto);
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        'nom nom ciu ciu'
-        'ema ema tel tel'
-        'asu asu asu asu'
-        'con con con con'
-        'ace ace ace env';
     row-gap: 24px;
     column-gap: 40px;
 }
@@ -708,7 +754,6 @@ section {
 
 /* LOCALIZACION */
 
-#mapa,
 #horario {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -716,11 +761,11 @@ section {
 
 #mapa {
     float: left;
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
 #horario {
-    margin-left: 600px;
+    margin-left: 550px;
     border: 1px solid #333;
     border-radius: 10px;
     padding: 20px;
@@ -730,8 +775,8 @@ section {
 iframe {
     border: 2px solid #333;
     border-radius: 5% 50%;
-    width: 300px;
-    height: 300px;
+    width: 296px;
+    height: 296px;
 }
 
 #horario h1,
