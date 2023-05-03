@@ -158,11 +158,6 @@ a.current {
     color: black;
 }
 
-.separador {
-    background-image: linear-gradient(to bottom, #dedede, white);
-    height: 20px;
-}
-
 /* FOOTER */
 
 footer {
